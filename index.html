@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="so">
+<head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>TIIGSI Student Portal</title><link rel="stylesheet" href="style.css">
+<link rel="icon" href="download2.png">
+</head>
+<body>
+<header class="nav"><div class="wrap navin"><a class="brand" href="../01-Registration/index.html"><img src="../shared/tiigsi-logo.png"><span>Student Portal</span></a><a class="linkbtn" href="../01-Registration/index.html">Diiwaangelin cusub</a></div></header>
+<main class="wrap">
+<section id="gate" class="gate">
+ <div class="gatebox">
+  <span class="eyebrow">TIIGSI STUDENT PORTAL</span><h1>Ku soo gal Student Portal</h1>
+  <p>Isticmaal Student ID-ga laguu sameeyey marka aad is-diiwaangelisay iyo lambarka telefoonkaaga.</p>
+  <label>Student ID<input id="sid" placeholder="TGS-2026-123456"></label>
+  <label>Telefoon<input id="phone" placeholder="+252..."></label>
+  <button class="primary" onclick="enterPortal()">Geli Portal-ka</button>
+  <div id="error" class="error"></div>
+ </div>
+</section>
+
+<section id="portal" class="hidden">
+ <div class="welcome"><div><span class="eyebrow">STUDENT PORTAL</span><h1 id="welcomeName"></h1><p id="welcomeCourse"></p></div><button class="secondary" onclick="logoutStudent()">Ka bax</button></div>
+ <div class="stats"><div><span>Student ID</span><b id="pId"></b></div><div><span>Status</span><b id="pStatus"></b></div><div><span>Grade</span><b id="pGrade">—</b></div><div><span>Average</span><b id="pAverage">—</b></div></div>
+ <div class="grid">
+  <article class="card"><h2>Xogta Ardayga</h2><div class="info"><div><span>Magac</span><b id="pName"></b></div><div><span>Phone</span><b id="pPhone"></b></div><div><span>Email</span><b id="pEmail"></b></div><div><span>Magaalo</span><b id="pCity"></b></div><div><span>Jinsi</span><b id="pGender"></b></div><div><span>Da</span><b id="pAge"></b></div></div></article>
+  <article class="card"><h2>Imtixaanka & Shahaadada</h2><p class="muted">Xogtan waxaa cusboonaysiin kara maamulka marka shuruudaha koorsada la dhammeeyo.</p><div class="progress"><div id="bar"></div></div><p id="examText">Exam Status: Not Started</p><button class="primary" id="certificateBtn" disabled>Shahaadada weli lama heli karo</button></article>
+ </div>
+</section>
+</main>
+<footer>© TIIGSI Technology College — Student Portal</footer>
+<script src="../shared/common.js"></script><script src="script.js"></script>
+</body></html>
